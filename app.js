@@ -64,7 +64,7 @@ function fetchWaitingtimes() {
                         itemsToUpload.push({
                             'title': items[i].title[0],
                             'timestamp': Date.now(),
-                            'waittime': attraction.replace(' min', '').replace('"', '').trim()
+                            'waittime': parseInt(attraction.replace(' min', '').replace('"', '').trim())
                         });
                     }
                 }
